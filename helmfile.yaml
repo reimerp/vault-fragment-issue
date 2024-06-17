@@ -1,0 +1,19 @@
+repositories:
+ - name: prometheus-community
+   url: https://prometheus-community.github.io/helm-charts
+
+releases:
+- name: values-ok
+  chart: prometheus-community/prometheus
+  values:
+  - values_ok.yaml
+
+- name: values-invalid-path
+  chart: prometheus-community/prometheus
+  values:
+  - values_invalid_path.yaml
+
+- name: values-invalid-fragment
+  chart: prometheus-community/prometheus
+  values:
+  - values_invalid_fragment.yaml

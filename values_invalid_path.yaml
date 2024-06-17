@@ -1,0 +1,2 @@
+imagePullSecrets:
+  - name: ref+vault://some/invalid_path/prom#imagepull
